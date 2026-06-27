@@ -1,0 +1,701 @@
+/* ===========================================
+   RESET
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+
+    background:#f4f7fb;
+
+    color:#333;
+
+}
+
+/* ===========================================
+   WRAPPER
+=========================================== */
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+/* ===========================================
+   SIDEBAR
+=========================================== */
+
+.sidebar{
+
+    width:260px;
+
+    background:linear-gradient(
+        180deg,
+        #0d6efd,
+        #0a58ca
+    );
+
+    color:#fff;
+
+    position:fixed;
+
+    left:0;
+
+    top:0;
+
+    bottom:0;
+
+    padding:25px 0;
+
+    box-shadow:3px 0 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.logo i{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+.logo h4{
+
+    font-weight:700;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    padding:15px 30px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    transition:.3s;
+
+    font-size:16px;
+
+}
+
+.sidebar ul li:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.sidebar ul li.active{
+
+    background:#fff;
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+}
+
+.sidebar ul li i{
+
+    font-size:18px;
+
+}
+
+/* ===========================================
+   CONTENT
+=========================================== */
+
+.content{
+
+    margin-left:260px;
+
+    width:calc(100% - 260px);
+
+    padding:35px;
+
+}
+
+/* ===========================================
+   HEADER
+=========================================== */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.page-header h2{
+
+    color:#0d6efd;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+
+}
+
+.page-header p{
+
+    color:#777;
+
+}
+
+.page-header span{
+
+    color:#0d6efd;
+
+    font-weight:600;
+
+}
+/* ===========================================
+   CARD STATISTIK
+=========================================== */
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+.stat-card h6{
+
+    color:#777;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.stat-card h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#222;
+
+}
+
+.stat-card h5{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#222;
+
+    margin-bottom:6px;
+
+}
+
+/* ===========================================
+   ICON CARD
+=========================================== */
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    color:#fff;
+
+}
+
+.icon.blue{
+
+    background:#0d6efd;
+
+}
+
+.icon.green{
+
+    background:#198754;
+
+}
+
+.icon.orange{
+
+    background:#fd7e14;
+
+}
+
+/* ===========================================
+   CARD
+=========================================== */
+
+.card{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.card-body{
+
+    padding:30px;
+
+}
+
+/* ===========================================
+   TOOLBAR
+=========================================== */
+
+.toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.left-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.right-toolbar{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+/* ===========================================
+   BUTTON
+=========================================== */
+
+.btn-primary{
+
+    border-radius:12px;
+
+    padding:10px 22px;
+
+    font-weight:600;
+
+}
+
+.btn-primary i{
+
+    margin-right:6px;
+
+}
+
+/* ===========================================
+   SEARCH
+=========================================== */
+
+.search-box{
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:320px;
+
+    padding:12px 18px 12px 45px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#f1f4f8;
+
+    transition:.3s;
+
+}
+
+.search-box input:focus{
+
+    background:#fff;
+
+    box-shadow:0 0 0 3px rgba(13,110,253,.15);
+
+}
+
+.search-box i{
+
+    position:absolute;
+
+    left:16px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#666;
+
+}
+/* ===========================================
+   TABLE
+=========================================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.table thead th{
+
+    padding:16px;
+
+    border:none;
+
+    font-weight:600;
+
+    vertical-align:middle;
+
+}
+
+.table tbody td{
+
+    padding:16px;
+
+    vertical-align:middle;
+
+    border-color:#eef2f7;
+
+}
+
+.table tbody tr{
+
+    transition:.25s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* ===========================================
+   BUTTON AKSI
+=========================================== */
+
+.btn-action{
+
+    width:38px;
+
+    height:38px;
+
+    border:none;
+
+    border-radius:10px;
+
+    color:#fff;
+
+    margin:0 3px;
+
+    transition:.25s;
+
+}
+
+.btn-edit{
+
+    background:#ffc107;
+
+}
+
+.btn-edit:hover{
+
+    background:#e0a800;
+
+    transform:translateY(-2px);
+
+}
+
+.btn-delete{
+
+    background:#dc3545;
+
+}
+
+.btn-delete:hover{
+
+    background:#bb2d3b;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================================
+   FOOTER TABLE
+=========================================== */
+
+.table-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:18px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* ===========================================
+   MODAL
+=========================================== */
+
+.modal-content{
+
+    border:none;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.modal-header{
+
+    background:#0d6efd;
+
+    color:#fff;
+
+}
+
+.modal-header .btn-close{
+
+    filter:invert(1);
+
+}
+
+.modal-title{
+
+    font-weight:600;
+
+}
+
+.modal-body{
+
+    padding:25px;
+
+}
+
+.modal-body label{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.modal-body .form-control,
+.modal-body .form-select{
+
+    border-radius:10px;
+
+    padding:10px 14px;
+
+}
+
+.modal-footer{
+
+    padding:18px 25px;
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:992px){
+
+    .sidebar{
+
+        width:220px;
+
+    }
+
+    .content{
+
+        margin-left:220px;
+
+        width:calc(100% - 220px);
+
+        padding:25px;
+
+    }
+
+    .search-box input{
+
+        width:240px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .wrapper{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+    .content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+    .table{
+
+        font-size:14px;
+
+    }
+
+    .btn-action{
+
+        width:34px;
+
+        height:34px;
+
+    }
+
+}
